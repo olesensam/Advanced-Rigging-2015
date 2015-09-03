@@ -1,6 +1,6 @@
 //Maya ASCII 2014 scene
 //Name: Battleship_ControlConstraint.ma
-//Last modified: Thu, Sep 03, 2015 12:06:58 PM
+//Last modified: Thu, Sep 03, 2015 01:54:16 PM
 //Codeset: 1252
 requires maya "2014";
 currentUnit -l centimeter -a degree -t film;
@@ -12,12 +12,12 @@ fileInfo "osv" "Microsoft Windows 7 Home Premium Edition, 64-bit Windows 7 Servi
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 35.023212813571377 24.570262778342748 8.0478673413116582 ;
-	setAttr ".r" -type "double3" -27.938352735213382 800.19999999881009 -9.3430586913913292e-015 ;
+	setAttr ".t" -type "double3" 15.381402835652018 12.131477408723846 12.851354270424251 ;
+	setAttr ".r" -type "double3" -18.338352735188046 773.79999999878146 2.6926211986657488e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 39.399793092395392;
+	setAttr ".coi" 19.136434154097365;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -5986,47 +5986,16 @@ createNode mesh -n "ThrusterShape" -p "Thruster";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 42 ".pt";
-	setAttr ".pt[504]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[505]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[506]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[507]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[508]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[509]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[510]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[511]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[512]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[513]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[514]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[515]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[516]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[517]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[518]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[519]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[520]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[521]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[522]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[523]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[524]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[525]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[526]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[527]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[528]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[529]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[530]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[531]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[532]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[533]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[534]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[535]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[536]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[537]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[538]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[539]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[540]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[541]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[542]" -type "float3" 0 0 -1.4901161e-008 ;
-	setAttr ".pt[543]" -type "float3" 0 0 -1.4901161e-008 ;
+	setAttr -s 40 ".pt[504:543]" -type "float3"  0 0 -1.4901161e-008 0 0 -1.4901161e-008 
+		0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 
+		0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 
+		-1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 
+		0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 
+		0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 
+		-1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 
+		0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 
+		0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 
+		-1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008 0 0 -1.4901161e-008;
 createNode mesh -n "polySurfaceShape1" -p "Thruster";
 	setAttr -k off ".v";
 	setAttr ".io" yes;
@@ -26856,8 +26825,6 @@ select -ne :hardwareRenderingGlobals;
 select -ne :defaultHardwareRenderGlobals;
 	setAttr ".fn" -type "string" "im";
 	setAttr ".res" -type "string" "ntsc_4d 646 485 1.333";
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "Controls.di" "MainControl.do";
 connectAttr "Completed.di" "|Battleship|MainControl|MainBody|MainBody.do";
 connectAttr "Completed.di" "TopEye.do";
