@@ -1,6 +1,6 @@
 //Maya ASCII 2014 scene
 //Name: Battleship_ControlConstraint.ma
-//Last modified: Thu, Sep 03, 2015 01:54:16 PM
+//Last modified: Sat, Sep 05, 2015 11:10:13 AM
 //Codeset: 1252
 requires maya "2014";
 currentUnit -l centimeter -a degree -t film;
@@ -12,12 +12,12 @@ fileInfo "osv" "Microsoft Windows 7 Home Premium Edition, 64-bit Windows 7 Servi
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 15.381402835652018 12.131477408723846 12.851354270424251 ;
-	setAttr ".r" -type "double3" -18.338352735188046 773.79999999878146 2.6926211986657488e-015 ;
+	setAttr ".t" -type "double3" 23.424568771987186 6.7202849689156103 2.2024860163763416 ;
+	setAttr ".r" -type "double3" -1.5383527351858237 809.79999999870097 2.8473863851525853e-014 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 19.136434154097365;
+	setAttr ".coi" 22.70959405896825;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
