@@ -1,0 +1,30 @@
+SCRIPT 1
+Make a script that creates joints for a leg
+-creates an IK handle
+-creates a control to move the IK handle
+
+SCRIPT 2
+Free
+-must be written by self
+-no tutorial
+-must use scripting editor and MEL help
+-must be at least 20 lines 
+-must use variables
+-must have a for loop
+
+SCIPT
+
+circle -ch on -o on -nr 1 0 0 -r 1.19274 ;
+joint -p 0 -0.020689 -0.0246744 ;
+joint -p 0 -4.927714 0.416191 ;
+joint -e -zso -oj xyz -sao yup joint1;
+joint -p 0 -9.010511 -0.120515 ;
+joint -e -zso -oj xyz -sao yup joint2;
+joint -p 0 -9.106352 2.352166 ;
+joint -e -zso -oj xyz -sao yup joint3;
+IKHandleTool;
+select -r joint1.rotatePivot ;
+select -add joint3.rotatePivot ;
+ikHandle;
+circle -ch on -o on -nr 1 0 0 -r 1.168936 ;
+// Result: nurbsCircle2 makeNurbCircle2 // 
