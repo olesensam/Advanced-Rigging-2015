@@ -1,0 +1,8 @@
+Advanced Scripting for Rigging - 1
+Sam Olesen 
+
+BUY BOOK - C# pocket referance
+
+
+$myCube = `ls -sl`;
+print($myCube);

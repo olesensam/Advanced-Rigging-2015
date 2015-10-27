@@ -1,6 +1,6 @@
 //Maya ASCII 2016 scene
 //Name: Corvette_SansLandGear.ma
-//Last modified: Tue, Sep 22, 2015 03:28:29 PM
+//Last modified: Tue, Sep 22, 2015 03:30:47 PM
 //Codeset: 1252
 requires maya "2016";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType "mentalrayGlobals"
@@ -15,8 +15,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "D2F4109A-43F7-0FDF-7C80-49AB35A12F9B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -8.8298612994002408 45.555770487075129 28.006882882666567 ;
-	setAttr ".r" -type "double3" -417.93811401789566 -710.1999999998576 1.6138264602707415e-015 ;
+	setAttr ".t" -type "double3" 33.627533562496936 17.450999473992791 17.046857710140756 ;
+	setAttr ".r" -type "double3" -378.3381140178941 -649.39999999985309 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CE7C9829-4B45-CA85-E06C-DEA2EAA61F08";
 	setAttr -k off ".v" no;
@@ -5348,7 +5348,7 @@ createNode shadingEngine -n "blinn5SG";
 createNode materialInfo -n "materialInfo5";
 	rename -uid "12AA57D7-48AD-283C-96E3-E3A848E3CD90";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "2BA10472-4F7E-45CC-F7F3-11A3755C29A0";
+	rename -uid "CF2CBDCE-4F17-C028-3427-EF986A30578E";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -73.809520876596963 -323.80951094248991 ;
 	setAttr ".tgi[0].vh" -type "double2" 72.619044733426037 339.2857008037119 ;
